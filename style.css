@@ -1,0 +1,67 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f8ff;
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #0077b6;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+section {
+  padding: 20px;
+  border-bottom: 1px solid #ccc;
+}
+
+h2 {
+  color: #023e8a;
+}
+
+ul {
+  list-style-type: square;
+  padding-left: 20px;
+}
+
+a {
+  color: #0077b6;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+footer {
+  background-color: #0077b6;
+  color: white;
+  text-align: center;
+  padding: 10px;
+}
+
+/* Estilo para cartel */
+.cartel-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  perspective: 1000px;
+  margin: 20px 0;
+}
+
+.cartel-img {
+  width: 60%;
+  max-width: 400px;
+  border: 6px solid rgba(128, 128, 128, 0.4); /* gris translúcido */
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+  transform: rotateX(5deg) rotateY(-5deg) scale(1.05);
+  transition: transform 0.5s ease;
+}
+
+.cartel-img:hover {
+  transform: rotateX(0deg) rotateY(0deg) scale(1.1);
+}
